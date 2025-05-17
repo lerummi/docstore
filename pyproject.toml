@@ -1,0 +1,18 @@
+[project]
+name = "docstore"
+version = "0.1.0"
+description = "Docstore project aims for creating a generalized document store including various indexing and querying capabilities."
+authors = [
+    {name = "Martin Krause",email = "martin.krause.85@gmx.de"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "~3.12"
+dependencies = [
+    "docling (>=2.32.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

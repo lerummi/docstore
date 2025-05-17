@@ -1,0 +1,16 @@
+---
+services:
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: docker/jupyterlab/Dockerfile
+    image: jupyterlab:${IMAGE_TAG}
+    command: start-notebook.sh --NotebookApp.token="" --NotebookApp.notebook_dir=/home/jovyan/work
+    environment:
+      - PYTHONPATH=/home/jovyan/
+      - DATADIR=/home/jovyan/data
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/work/nootbooks:rw
+      - ./docstore:/home/jovyan/work/docstore:ro
