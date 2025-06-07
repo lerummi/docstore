@@ -9,7 +9,11 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = "~3.12"
 dependencies = [
-    "docling (>=2.32.0,<3.0.0)"
+    "docling (>=2.32.0,<3.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "openai (>=1.79.0,<2.0.0)",
+    "elasticsearch (>=9.0.1,<10.0.0)",
+    "ipywidgets (>=8.1.7,<9.0.0)"
 ]
 
 
